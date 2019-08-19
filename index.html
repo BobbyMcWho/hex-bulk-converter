@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="container">
+    <div  class="row top"><div class="col-md-12"><h1> Bulk Hex Color Converter</h1></div></div>
+  <div class="row">
+    <div class="col-md-6">
+      <p>Paste 6 digit hex values separated by commas to convert.<br>You can include or exclude the #.<br>Saved values and tables are stored in localStorage for your next visit.</p>
+      <input class="form-control" id="hexArr" value="#f44336,#E91E63,#9C27B0">
+      <button class="btn btn-xs btn-success" id="button">Add to Current Table</button>
+      <button class="btn btn-xs btn-danger" id="clear">Clear Current Table</button><br>
+      <button class="btn btn-xs btn-success" id="save">Save Input Values</button>
+      <button class="btn btn-xs btn-primary" id="retrieve">Retrieve Saved Input Values</button>
+      <button class="btn btn-xs btn-danger" id="clearSave">Clear Input Memory</button><br>
+      <button class="btn btn-xs btn-success" id="saveTable">Save Table</button>
+      <button class="btn btn-xs btn-primary" id="retrieveTable">Retrieve Saved  Table</button>
+
+
+      <button class="btn btn-xs btn-danger" id="clearSaveTable">Clear Table Memory</button>
+    </div>
+    <div class="col-md-6">
+      <p class="alert"></p>
+      <div class="table-responsive">
+      <table class="table" id="father">
+        <thead>
+          <tr>
+            <th>hex</th>
+            <th>rgba</th>
+            <th>hsl</th>
+            <th>&nbsp;</th>
+          </tr>
+        </thead>
+      </table>
+      </div>
+    </div>
+    
+  </div>
+  <div class="row foot"><div class="col-md-4 col-md-offset-4 text-center"><p>Created by <a href="http://rmcd.io">Robert McDonald</a></p>
+    </div></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{
+  font-family:Sans-serif;
+  background-color:#B0BEC5;
+  margin-top:25vh;
+}
+@media screen and (max-width:992px){
+  body{
+    margin-top:5vh;
+  }
+}
+.box{
+  padding:10px;
+  max-width:10px;
+
+}
+.btn {
+  margin:5px 0;
+}
+thead{
+  background-color:#455A64;
+  color:#FAFAFA;
+}
+.alert{
+  display:none;
+}
+.foot{
+  margin-top: 5vh;
+}
+.foot a{
+  color:#fff;
+}
